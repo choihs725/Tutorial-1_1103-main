@@ -1,0 +1,437 @@
+fileFormatVersion: 2
+guid: cedafff5e44813445a8580dc647a8b13
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      74: 6693740684256747385
+    second: Classic_16_Door_L|Classic_16_Body.001|Take 001|BaseLayer
+  - first:
+      74: 5916177794933673401
+    second: Classic_16_Door_L|Classic_16_Body.001|Take 001|BaseLayer.001
+  - first:
+      74: 4324000814301969426
+    second: Classic_16_Door_L|Classic_16_Body|Take 001|BaseLayer
+  - first:
+      74: -8072299995259609619
+    second: Classic_16_Door_L|Classic_16_Bumper_B_1|Take 001|BaseLayer
+  - first:
+      74: 7073989757167747538
+    second: Classic_16_Door_L|Classic_16_Bumper_F_1|Take 001|BaseLayer
+  - first:
+      74: -8555740717856968838
+    second: Classic_16_Door_L|Classic_16_Dashboard.001|Take 001|BaseLayer
+  - first:
+      74: 2898248795170185799
+    second: Classic_16_Door_L|Classic_16_Dashboard.001|Take 001|BaseLayer.001
+  - first:
+      74: -2254976531376663856
+    second: Classic_16_Door_L|Classic_16_Dashboard|Take 001|BaseLayer
+  - first:
+      74: -1928090797256465989
+    second: Classic_16_Door_L|Classic_16_Door_L.001|Take 001|BaseLayer
+  - first:
+      74: -6992901770859102696
+    second: Classic_16_Door_L|Classic_16_Door_L.001|Take 001|BaseLayer.001
+  - first:
+      74: -7685948734838581425
+    second: Classic_16_Door_L|Classic_16_Door_L|Take 001|BaseLayer
+  - first:
+      74: 7290768820701726034
+    second: Classic_16_Door_L|Classic_16_Door_L|Take 001|BaseLayer.001
+  - first:
+      74: -5674538810073729458
+    second: Classic_16_Door_L|Classic_16_Door_L|Take 001|BaseLayer.003
+  - first:
+      74: 3215098209670794119
+    second: Classic_16_Door_L|Classic_16_Door_L|Take 001|BaseLayer.004
+  - first:
+      74: 8141202458388575369
+    second: Classic_16_Door_L|Classic_16_Door_R.001|Take 001|BaseLayer
+  - first:
+      74: -296065767759152159
+    second: Classic_16_Door_L|Classic_16_Door_R.001|Take 001|BaseLayer.001
+  - first:
+      74: -4693083196682878580
+    second: Classic_16_Door_L|Classic_16_Door_R|Take 001|BaseLayer
+  - first:
+      74: -197833344580477175
+    second: Classic_16_Door_L|Classic_16_Hood.001|Take 001|BaseLayer
+  - first:
+      74: -2686130656937453981
+    second: Classic_16_Door_L|Classic_16_Hood.001|Take 001|BaseLayer.001
+  - first:
+      74: -7191551818149078815
+    second: Classic_16_Door_L|Classic_16_Hood|Take 001|BaseLayer
+  - first:
+      74: 5024248592135095636
+    second: Classic_16_Door_L|Classic_16_LightGlass_L.001|Take 001|BaseLayer
+  - first:
+      74: 4807518122236799907
+    second: Classic_16_Door_L|Classic_16_LightGlass_L.001|Take 001|BaseLayer.001
+  - first:
+      74: -8439555253145470304
+    second: Classic_16_Door_L|Classic_16_LightGlass_L|Take 001|BaseLayer
+  - first:
+      74: 6803001607787433663
+    second: Classic_16_Door_L|Classic_16_LightGlass_R.001|Take 001|BaseLayer
+  - first:
+      74: -5301904291018005552
+    second: Classic_16_Door_L|Classic_16_LightGlass_R.001|Take 001|BaseLayer.001
+  - first:
+      74: -1941485723224343297
+    second: Classic_16_Door_L|Classic_16_LightGlass_R|Take 001|BaseLayer
+  - first:
+      74: 2056002935339618744
+    second: Classic_16_Door_L|Classic_16_Roof.001|Take 001|BaseLayer
+  - first:
+      74: -7010758093157504012
+    second: Classic_16_Door_L|Classic_16_Roof.001|Take 001|BaseLayer.001
+  - first:
+      74: -4569015303226789822
+    second: Classic_16_Door_L|Classic_16_Roof|Take 001|BaseLayer
+  - first:
+      74: 5160787043093500856
+    second: Classic_16_Door_L|Classic_16_SidePanel_2|Take 001|BaseLayer
+  - first:
+      74: -711510639819663051
+    second: Classic_16_Door_L|Classic_16_Taillights.001|Take 001|BaseLayer
+  - first:
+      74: 1089999101057860147
+    second: Classic_16_Door_L|Classic_16_Taillights.001|Take 001|BaseLayer.001
+  - first:
+      74: 944972966102107624
+    second: Classic_16_Door_L|Classic_16_Taillights|Take 001|BaseLayer
+  - first:
+      74: 1762751685505658804
+    second: Classic_16_Door_L|Classic_16_Trunk.001|Take 001|BaseLayer
+  - first:
+      74: -7634421854708004034
+    second: Classic_16_Door_L|Classic_16_Trunk.001|Take 001|BaseLayer.001
+  - first:
+      74: 6798505084468523704
+    second: Classic_16_Door_L|Classic_16_Trunk|Take 001|BaseLayer
+  - first:
+      74: -2567367412609368648
+    second: Classic_16_Door_L|Classic_16_Window_B.001|Take 001|BaseLayer
+  - first:
+      74: -5447010792738805746
+    second: Classic_16_Door_L|Classic_16_Window_B.001|Take 001|BaseLayer.001
+  - first:
+      74: -528878263999092099
+    second: Classic_16_Door_L|Classic_16_Window_B|Take 001|BaseLayer
+  - first:
+      74: -1890805874356724738
+    second: Classic_16_Door_L|Classic_16_Window_F.001|Take 001|BaseLayer
+  - first:
+      74: -5853979137094591500
+    second: Classic_16_Door_L|Classic_16_Window_F.001|Take 001|BaseLayer.001
+  - first:
+      74: 6866021054474399825
+    second: Classic_16_Door_L|Classic_16_Window_F|Take 001|BaseLayer
+  - first:
+      74: 4450825013993282329
+    second: Classic_16_Door_L|Classic_16_Window_LB.001|Take 001|BaseLayer
+  - first:
+      74: -7203233158065912913
+    second: Classic_16_Door_L|Classic_16_Window_LB.001|Take 001|BaseLayer.001
+  - first:
+      74: 2788840393313483111
+    second: Classic_16_Door_L|Classic_16_Window_LB|Take 001|BaseLayer
+  - first:
+      74: 2621421780318217567
+    second: Classic_16_Door_L|Classic_16_Window_LF.001|Take 001|BaseLayer
+  - first:
+      74: 1568084699231797993
+    second: Classic_16_Door_L|Classic_16_Window_LF.001|Take 001|BaseLayer.001
+  - first:
+      74: -3864330601976566521
+    second: Classic_16_Door_L|Classic_16_Window_LF|Take 001|BaseLayer
+  - first:
+      74: 4800170422367877008
+    second: Classic_16_Door_L|Classic_16_Window_RB.001|Take 001|BaseLayer
+  - first:
+      74: -1219257985928726083
+    second: Classic_16_Door_L|Classic_16_Window_RB.001|Take 001|BaseLayer.001
+  - first:
+      74: 7238637697806372515
+    second: Classic_16_Door_L|Classic_16_Window_RB|Take 001|BaseLayer
+  - first:
+      74: 1941438248852942869
+    second: Classic_16_Door_L|Classic_16_Window_RF.001|Take 001|BaseLayer
+  - first:
+      74: -7797041331175883563
+    second: Classic_16_Door_L|Classic_16_Window_RF.001|Take 001|BaseLayer.001
+  - first:
+      74: 8292588204882097209
+    second: Classic_16_Door_L|Classic_16_Window_RF|Take 001|BaseLayer
+  - first:
+      74: -8159892079011055388
+    second: Classic_16_Door_L|Roof_Inlet_4|Take 001|BaseLayer
+  - first:
+      74: -1862285173278427192
+    second: Classic_16_Door_L|Spoiler_8|Take 001|BaseLayer
+  - first:
+      74: -3719689354711125111
+    second: Classic_16_Door_L.003|Classic_16_Body.001|Take 001|BaseLayer
+  - first:
+      74: -5231949986466501808
+    second: Classic_16_Door_L.003|Classic_16_Body.001|Take 001|BaseLayer.001
+  - first:
+      74: 688150196494564563
+    second: Classic_16_Door_L.003|Classic_16_Body|Take 001|BaseLayer
+  - first:
+      74: -9008268669130607811
+    second: Classic_16_Door_L.003|Classic_16_Bumper_B_1|Take 001|BaseLayer
+  - first:
+      74: 1200821517948315033
+    second: Classic_16_Door_L.003|Classic_16_Bumper_F_1|Take 001|BaseLayer
+  - first:
+      74: 4150214234694427452
+    second: Classic_16_Door_L.003|Classic_16_Dashboard.001|Take 001|BaseLayer
+  - first:
+      74: -4282150463516356012
+    second: Classic_16_Door_L.003|Classic_16_Dashboard.001|Take 001|BaseLayer.001
+  - first:
+      74: 2124952332183746214
+    second: Classic_16_Door_L.003|Classic_16_Dashboard|Take 001|BaseLayer
+  - first:
+      74: -7418465486372477124
+    second: Classic_16_Door_L.003|Classic_16_Door_L.001|Take 001|BaseLayer
+  - first:
+      74: 200064701947293077
+    second: Classic_16_Door_L.003|Classic_16_Door_L.001|Take 001|BaseLayer.001
+  - first:
+      74: -5175185523554013326
+    second: Classic_16_Door_L.003|Classic_16_Door_L|Take 001|BaseLayer
+  - first:
+      74: 5464384608444621569
+    second: Classic_16_Door_L.003|Classic_16_Door_L|Take 001|BaseLayer.001
+  - first:
+      74: -1212972120322909001
+    second: Classic_16_Door_L.003|Classic_16_Door_L|Take 001|BaseLayer.003
+  - first:
+      74: -5091965504774149587
+    second: Classic_16_Door_L.003|Classic_16_Door_L|Take 001|BaseLayer.004
+  - first:
+      74: 8314758514822259266
+    second: Classic_16_Door_L.003|Classic_16_Door_R.001|Take 001|BaseLayer
+  - first:
+      74: -993062725002147274
+    second: Classic_16_Door_L.003|Classic_16_Door_R.001|Take 001|BaseLayer.001
+  - first:
+      74: -2482377948148841673
+    second: Classic_16_Door_L.003|Classic_16_Door_R|Take 001|BaseLayer
+  - first:
+      74: -6431887298298429873
+    second: Classic_16_Door_L.003|Classic_16_Hood.001|Take 001|BaseLayer
+  - first:
+      74: 7372653584227504563
+    second: Classic_16_Door_L.003|Classic_16_Hood.001|Take 001|BaseLayer.001
+  - first:
+      74: 4906173628681384119
+    second: Classic_16_Door_L.003|Classic_16_Hood|Take 001|BaseLayer
+  - first:
+      74: 4171967961658125508
+    second: Classic_16_Door_L.003|Classic_16_LightGlass_L.001|Take 001|BaseLayer
+  - first:
+      74: -7348489809026588039
+    second: Classic_16_Door_L.003|Classic_16_LightGlass_L.001|Take 001|BaseLayer.001
+  - first:
+      74: -8496072868230372398
+    second: Classic_16_Door_L.003|Classic_16_LightGlass_L|Take 001|BaseLayer
+  - first:
+      74: 1484290563221942724
+    second: Classic_16_Door_L.003|Classic_16_LightGlass_R.001|Take 001|BaseLayer
+  - first:
+      74: -5314859459223787402
+    second: Classic_16_Door_L.003|Classic_16_LightGlass_R.001|Take 001|BaseLayer.001
+  - first:
+      74: 4164653210228799710
+    second: Classic_16_Door_L.003|Classic_16_LightGlass_R|Take 001|BaseLayer
+  - first:
+      74: 5939759938079983391
+    second: Classic_16_Door_L.003|Classic_16_Roof.001|Take 001|BaseLayer
+  - first:
+      74: 3950984966616076494
+    second: Classic_16_Door_L.003|Classic_16_Roof.001|Take 001|BaseLayer.001
+  - first:
+      74: -7734893554368735644
+    second: Classic_16_Door_L.003|Classic_16_Roof|Take 001|BaseLayer
+  - first:
+      74: 5489939097021279753
+    second: Classic_16_Door_L.003|Classic_16_SidePanel_2|Take 001|BaseLayer
+  - first:
+      74: 9213048557747459101
+    second: Classic_16_Door_L.003|Classic_16_Taillights.001|Take 001|BaseLayer
+  - first:
+      74: -3682029919938353565
+    second: Classic_16_Door_L.003|Classic_16_Taillights.001|Take 001|BaseLayer.001
+  - first:
+      74: 8769304011321139698
+    second: Classic_16_Door_L.003|Classic_16_Taillights|Take 001|BaseLayer
+  - first:
+      74: 5990332064881058605
+    second: Classic_16_Door_L.003|Classic_16_Trunk.001|Take 001|BaseLayer
+  - first:
+      74: 6532309941857954308
+    second: Classic_16_Door_L.003|Classic_16_Trunk.001|Take 001|BaseLayer.001
+  - first:
+      74: 1153471993474792148
+    second: Classic_16_Door_L.003|Classic_16_Trunk|Take 001|BaseLayer
+  - first:
+      74: 1427737527595796544
+    second: Classic_16_Door_L.003|Classic_16_Window_B.001|Take 001|BaseLayer
+  - first:
+      74: -7210646663473563170
+    second: Classic_16_Door_L.003|Classic_16_Window_B.001|Take 001|BaseLayer.001
+  - first:
+      74: -875694071182125706
+    second: Classic_16_Door_L.003|Classic_16_Window_B|Take 001|BaseLayer
+  - first:
+      74: 6184663481397234756
+    second: Classic_16_Door_L.003|Classic_16_Window_F.001|Take 001|BaseLayer
+  - first:
+      74: -6682289778175578454
+    second: Classic_16_Door_L.003|Classic_16_Window_F.001|Take 001|BaseLayer.001
+  - first:
+      74: 6516481608807079991
+    second: Classic_16_Door_L.003|Classic_16_Window_F|Take 001|BaseLayer
+  - first:
+      74: -4159736909707103975
+    second: Classic_16_Door_L.003|Classic_16_Window_LB.001|Take 001|BaseLayer
+  - first:
+      74: -323352681124469775
+    second: Classic_16_Door_L.003|Classic_16_Window_LB.001|Take 001|BaseLayer.001
+  - first:
+      74: -7697350398451980329
+    second: Classic_16_Door_L.003|Classic_16_Window_LB|Take 001|BaseLayer
+  - first:
+      74: -3353171692474600614
+    second: Classic_16_Door_L.003|Classic_16_Window_LF.001|Take 001|BaseLayer
+  - first:
+      74: 4206839414854286009
+    second: Classic_16_Door_L.003|Classic_16_Window_LF.001|Take 001|BaseLayer.001
+  - first:
+      74: -316331162896373575
+    second: Classic_16_Door_L.003|Classic_16_Window_LF|Take 001|BaseLayer
+  - first:
+      74: 5029962393916723042
+    second: Classic_16_Door_L.003|Classic_16_Window_RB.001|Take 001|BaseLayer
+  - first:
+      74: -6274143493988799385
+    second: Classic_16_Door_L.003|Classic_16_Window_RB.001|Take 001|BaseLayer.001
+  - first:
+      74: 695149018005939721
+    second: Classic_16_Door_L.003|Classic_16_Window_RB|Take 001|BaseLayer
+  - first:
+      74: 8745292886905652656
+    second: Classic_16_Door_L.003|Classic_16_Window_RF.001|Take 001|BaseLayer
+  - first:
+      74: -8683551901375546004
+    second: Classic_16_Door_L.003|Classic_16_Window_RF.001|Take 001|BaseLayer.001
+  - first:
+      74: -2263528212889236725
+    second: Classic_16_Door_L.003|Classic_16_Window_RF|Take 001|BaseLayer
+  - first:
+      74: 2271356559124629898
+    second: Classic_16_Door_L.003|Roof_Inlet_4|Take 001|BaseLayer
+  - first:
+      74: -1348200066614302845
+    second: Classic_16_Door_L.003|Spoiler_8|Take 001|BaseLayer
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
