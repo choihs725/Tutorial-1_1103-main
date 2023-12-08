@@ -3663,7 +3663,7 @@ MonoBehaviour:
   lever2: {fileID: 469114034}
   knob: {fileID: 203982082}
   accelerationSound: {fileID: 8300000, guid: f8d2fa91d3c43ff4db650c4ab65a5982, type: 3}
-  brakeSound: {fileID: 8300000, guid: ddb59f748637e7243bf44884c771bb7a, type: 3}
+  brakeSound: {fileID: 8300000, guid: b822534358cb3db4ca5aaf31e359dcda, type: 3}
   forwardSpeed: 0
   turnSpeed: 10
   acceleration: 1
@@ -3796,7 +3796,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ddb59f748637e7243bf44884c771bb7a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b822534358cb3db4ca5aaf31e359dcda, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

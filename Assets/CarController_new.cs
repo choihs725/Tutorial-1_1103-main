@@ -14,8 +14,6 @@ public class CarController_new : MonoBehaviour
     public AudioClip accelerationSound; // 가속 소리
     public AudioClip brakeSound; // 브레이크 소리
 
-    //private XRController leftController;
-    //private XRController rightController;
     private Brake_R brakeScript1;  // Brake_R 스크립트에 접근하기 위한 변수
     private brake brakeScript2;
 
@@ -33,11 +31,6 @@ public class CarController_new : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // XR Toolkit을 통해 왼쪽과 오른쪽 컨트롤러 가져오기
-        //InputDevices.GetDevicesAtXRNode(XRNode.LeftHand, new List<InputDevice>());
-        //InputDevices.GetDevicesAtXRNode(XRNode.RightHand, new List<InputDevice>());
-        //leftController = FindObjectOfType<XRController>();
-        //rightController = FindObjectOfType<XRController>();
         // Brake_R 스크립트를 찾아서 할당
         brakeScript1 = FindObjectOfType<Brake_R>();
         brakeScript2 = FindObjectOfType<brake>();
@@ -45,6 +38,7 @@ public class CarController_new : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         currentSpeed = forwardSpeed;
         Debug.Log("void Start finished");
+        audioSource.clip = accelerationSound;
     }
 
     // Update is called once per frame
@@ -57,7 +51,7 @@ public class CarController_new : MonoBehaviour
 
         // 새로운 회전을 적용
         transform.Rotate(Vector3.up, turnAngle);
-
+        
         // Check if both A and X buttons are pressed
         /*if (CheckBrakeInput())
         {
@@ -68,48 +62,212 @@ public class CarController_new : MonoBehaviour
             audioSource.Play();
         }*/
         // 속도가 0 이하이면 멈추도록 설정
+        /*
         if (currentSpeed < 0.0f)
         {
             currentSpeed = 0.0f;
         }
+        */
 
-        // 가속도 적용
-        currentSpeed += acceleration * Time.deltaTime * (lever.value ? 0 : 1);
-        // 사이드브레이크 적용
-        currentSpeed -= sidebrakeForce * (lever2.value ? 0 : 1) * Time.deltaTime;
+        if (currentSpeed > 0)
+        {
+            float desiredVolume = Mathf.Lerp(0.0f, maxVolume, currentSpeed / 10.0f);
+            float desiredBrakeVolume = Mathf.Lerp(0.0f, 1.0f, currentSpeed / 10.0f);
+            float desiredSideBrakeVolume = Mathf.Lerp(2.0f, 0.0f, currentSpeed / 10.0f);
+            if (!lever.value) // 기어가 D에 있을 때
+            {
+                /*
+                if (audioSource.clip == accelerationSound)
+                {
+                    float desiredVolume = Mathf.Lerp(0.0f, maxVolume, currentSpeed / 10.0f);
+                    audioSource.clip = accelerationSound;
+                    audioSource.volume = desiredVolume;
+                    if (!audioSource.isPlaying)
+                    {
+                        Debug.Log("Sound"); 
+                        audioSource.Play();
+                    }
+         
+                }
+                */
+                if (brakeScript1.val && brakeScript2.val) //브레이크를 밟았을 때
+                {
+                    if (audioSource.clip != brakeSound) 
+                    { 
+                        audioSource.Stop();
+                        
+                        audioSource.clip = brakeSound;
+                        
+                        //audioSource.PlayOneShot(accelerationSound, desiredVolume);
+                        //audioSource.PlayOneShot(brakeSound, desiredBrakeVolume);
+
+                    }
+                    
+                    currentSpeed -= brakeForce * Time.deltaTime;
+                    
+                    
+
+                    if (!audioSource.isPlaying)
+                        {
+                            audioSource.clip = brakeSound;
+                            Debug.Log("Sound");
+                            audioSource.PlayOneShot(accelerationSound, desiredVolume);
+                            audioSource.PlayOneShot(brakeSound, desiredBrakeVolume);
+                    }
+
+                    
+                    if (!lever2.value) // 사이드브레이크 작동
+                    {
+                        if (audioSource.clip != brakeSound)
+                        {
+                            audioSource.Stop();
+                            audioSource.clip = brakeSound;
+                            //audioSource.PlayOneShot(accelerationSound, desiredVolume);
+                            //audioSource.PlayOneShot(brakeSound, desiredSideBrakeVolume);
+                        }
+                        if (!audioSource.isPlaying)
+                        {
+                            audioSource.PlayOneShot(accelerationSound, desiredVolume);
+                            audioSource.PlayOneShot(brakeSound, desiredSideBrakeVolume);
+                        }
+                    }
+                }
+                else //브레이크를 밟지 않았을 때
+                {
+                    if(audioSource.clip != accelerationSound)
+                    {
+                        audioSource.Stop();
+
+                    }
+                    
+                    audioSource.clip = accelerationSound;
+                    audioSource.volume = desiredVolume;
+                    if (!audioSource.isPlaying)
+                    {
+                        Debug.Log("Sound");
+                        audioSource.Play();
+                    }
+                    if (!lever2.value) // 사이드 브레이크 작동
+                    {
+                        if (audioSource.clip != brakeSound)
+                        {
+                            audioSource.Stop();
+                            audioSource.clip = brakeSound;
+                        }
+                        //audioSource.clip = brakeSound;
+                        
+                        audioSource.volume = desiredBrakeVolume;
+
+                        if (!audioSource.isPlaying)
+                        {
+                            audioSource.clip = brakeSound;
+                            audioSource.Play();
+                        }
+                    }
+                }
+            }
+            else // 기어가 N일 때
+            {
+                if (audioSource.clip == accelerationSound)
+                {
+                    audioSource.Stop();
+                }
+                
 
 
-        if (brakeScript1.val && brakeScript2.val)
+                if (brakeScript1.val && brakeScript2.val) //브레이크를 밟았을 때
+                {
+                    if (audioSource.clip != brakeSound)
+                    {
+                        audioSource.Stop();
+                        audioSource.clip = brakeSound;
+
+                    }
+
+                    currentSpeed -= brakeForce * Time.deltaTime;
+
+                    if (!audioSource.isPlaying)
+                    {
+                        Debug.Log("Sound");
+                        audioSource.clip = brakeSound;
+                        audioSource.volume = desiredBrakeVolume;
+                        audioSource.Play();
+                    }
+                }
+                else //브레이크를 밟지 않았을 때
+                {
+                    if (audioSource.clip == brakeSound)
+                    {
+                        audioSource.Stop();
+                    }
+
+                    if (!lever2.value) // 사이드 브레이크 작동
+                    {
+                        if (audioSource.clip != brakeSound)
+                        {
+                            audioSource.Stop();
+                            audioSource.clip = brakeSound;
+                        }
+                        //audioSource.clip = brakeSound;
+
+                        audioSource.volume = desiredSideBrakeVolume;
+
+                        if (!audioSource.isPlaying)
+                        {
+                            audioSource.clip = brakeSound;
+                            audioSource.Play();
+                        }
+                    }
+                }
+            }
+        }
+        /*
+        if(brakeScript1.val && brakeScript2.val) //브레이크를 밟았을 때
         {
             currentSpeed -= brakeForce * Time.deltaTime;
-            if (currentSpeed > 0 && (!audioSource.isPlaying || audioSource.clip != brakeSound))
+            if (!audioSource.isPlaying || audioSource.clip != brakeSound)
             {
                 audioSource.clip = brakeSound;
                 audioSource.volume = 1.0f;
                 audioSource.Play();
             }
         }
-
-        
-        if (currentSpeed > 0 && !lever.value && (!audioSource.isPlaying || audioSource.clip != accelerationSound))
+        else
         {
-            float desiredVolume = Mathf.Lerp(0.0f, maxVolume, currentSpeed / 30.0f);
-            audioSource.clip = accelerationSound;
-            audioSource.volume = desiredVolume;
-            audioSource.Play();
+            if((audioSource.clip == brakeSound) && lever2.value)
+            {
+                audioSource.Stop();
+            }
         }
 
-        if (!lever2.value)
+        if (!lever2.value) // 사이드브레이크 작동
         {
-            if (currentSpeed > 0 && (!audioSource.isPlaying || audioSource.clip != brakeSound))
-            {
+            if(!audioSource.isPlaying || audioSource.clip != brakeSound){
                 audioSource.clip = brakeSound;
                 audioSource.volume = 1.5f;
                 audioSource.Play();
             }
         }
-        
+        else
+        {
+            if((audioSource.clip == brakeSound) && !(brakeScript1.val && brakeScript2.val)) {
+                audioSource.Stop();
+            }
+        }
+    }*/
+        else
+        {
+            currentSpeed = 0.0f;
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
 
+        // 가속도 적용
+        currentSpeed += acceleration * Time.deltaTime * (lever.value ? 0 : 1);
+        // 사이드브레이크 적용
+        currentSpeed -= sidebrakeForce * (lever2.value ? 0 : 1) * Time.deltaTime;
 
         // 전진 이동
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
@@ -119,23 +277,4 @@ public class CarController_new : MonoBehaviour
         float rotationAmount = turnInput * turnSpeed * Time.deltaTime;
         transform.Rotate(Vector3.up, rotationAmount);
     }
-    /*bool CheckBrakeInput()
-    {
-        bool val = false;
-        if (leftController && rightController)
-        {
-            leftController.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool leftAButton);
-            rightController.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool rightAButton);
-            if (leftAButton && rightAButton)
-            {
-                Debug.Log("X and A Button Pressed");
-                val = true;
-            }
-        }
-        else
-        {
-            val = false;
-        }
-        return val;
-    }*/
 }
