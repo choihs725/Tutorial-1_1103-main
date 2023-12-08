@@ -53,15 +53,7 @@ public class CarController_new : MonoBehaviour
         transform.Rotate(Vector3.up, turnAngle);
         
         // Check if both A and X buttons are pressed
-        /*if (CheckBrakeInput())
-        {
-            // Apply brake force
-            currentSpeed -= brakeForce * Time.deltaTime;
-            // 브레이크 소리 재생
-            audioSource.clip = brakeSound;
-            audioSource.Play();
-        }*/
-        // 속도가 0 이하이면 멈추도록 설정
+        
         /*
         if (currentSpeed < 0.0f)
         {
@@ -255,7 +247,7 @@ public class CarController_new : MonoBehaviour
             }
         }
     }*/
-        else
+        else // 속도가 0 이하이면 멈추도록 설정
         {
             currentSpeed = 0.0f;
             if (audioSource.isPlaying)

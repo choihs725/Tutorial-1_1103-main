@@ -648,6 +648,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "exit",
+                    "type": "Button",
+                    "id": "b135a9bc-56f5-4be8-85b7-af42936158ea",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -791,6 +800,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "brake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "31675d87-a78b-4a32-b92f-3a4a5360e5f5",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "exit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
